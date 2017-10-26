@@ -12,13 +12,13 @@ mongoose.connect(keys.mongoURI);
 // instantiate express app
 const app = express();
 
-app.use(
-  cookieSession({
-    // 30 days d-h-m-s-ms
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
-  })
-);
+// app.use(
+//   cookieSession({
+//     // 30 days d-h-m-s-ms
+//     maxAge: 30 * 24 * 60 * 60 * 1000,
+//     keys: [keys.cookieKey]
+//   })
+// );
 
 app.use(passport.initialize());
 
